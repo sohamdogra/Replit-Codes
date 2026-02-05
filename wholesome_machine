@@ -1,0 +1,10 @@
+print("Wholesome Positivity machine")
+name = input("What is your name:? ")
+achieve = input("What do you want to achieve")
+howFeel = input("On a scale of 1 - 10 how do you feel today? (1: :(, 10: :)")
+if howFeel == "0" or howFeel == "1" or howFeel == "2" or howFeel == "3" or howFeel == "4":
+  print("its going to be okay everything is going to get better you are an amazing person and are going to do big things!")
+elif howFeel == "5" or howFeel == "6" or howFeel == "7":
+  print("Im glad you are feeling somewhat okay and there is room for it to be better but you are going to have a great day and everything is going to go well today")
+else:
+  print("Yay! you're having a great day thats amazing and it can only get better keep rocking on!")
