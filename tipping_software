@@ -1,0 +1,14 @@
+# Ask the user for inputs
+total = float(input("How much did you spend? "))
+tip_percent = float(input("What percentage do you want to tip? "))
+people = int(input("How many people in your group? "))
+
+# Calculate total with tip
+tip_amount = total * (tip_percent / 100)
+total_with_tip = total + tip_amount
+
+# Calculate per person
+each_owes = total_with_tip / people
+
+# Print result rounded to 2 decimal places
+print(f"\nYou each owe ${each_owes:.2f}")
