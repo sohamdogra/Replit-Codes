@@ -1,0 +1,14 @@
+print("Fake Fan Finder")
+print("---------------")
+favArtist = input("Whats your favorite artist:? ")
+if favArtist == "tame impala":
+    print("Really? That is my favorite artist too!")
+    favSong = input("What is your favorite song? ")
+    if favSong == "let it happen" or "The less I know the better":
+        print("Right answer those are his best songs")
+    else: 
+        print("Hmm those songs aren't that bad...")
+elif favArtist == "Drake":
+    print("Interesting…")
+else:
+    print("Yeah, that's cool and all...")
