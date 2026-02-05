@@ -1,0 +1,26 @@
+from getpass import getpass
+
+print("MY LOGIN SYSTEM")
+print("+++++++++++++++")
+
+# Store users securely
+users = {
+    "soham": "111224",
+    "max": "1919"
+}
+
+attempts = 3
+
+while attempts > 0:
+    username = input("Username > ").strip().lower()
+    password = getpass("Password > ")
+
+    if username in users and password == users[username]:
+        print(f"\nWelcome, {username.capitalize()}!")
+        break
+    else:
+        attempts -= 1
+        print(f"\nIncorrect! Attempts left: {attempts}\n")
+
+if attempts == 0:
+    print("Too many failed attempts. Access denied.")
