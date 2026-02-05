@@ -1,0 +1,20 @@
+print("=== YOUR ADVENTURE SIMULATOR ===\n")
+
+weapon = input(
+    "You step into a shadow-filled forest.\n"
+    "A growl echoes between the trees...\n"
+    "Choose your weapon: "
+).strip()
+
+print(f"\nYou grip your {weapon}. A brave choice.\n")
+
+superpower = input(
+    "A surge of energy flows through you!\n"
+    "What superpower do you gain? "
+).strip()
+
+print(
+    f"\nWith your {weapon} and the power of {superpower}, "
+    "you charge forward and defeat the monster!\n"
+    "🏆 Victory is yours!"
+)
