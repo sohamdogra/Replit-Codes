@@ -1,0 +1,10 @@
+food = input("Name a food: ").strip()
+plant = input("Name a plant: ").strip()
+cooking_method = input("Name a method of cooking: ").strip()
+describe_food = input("Describe burned food: ").strip()
+household_item = input("Name a DIY item: ").strip()
+
+print(
+    f"\n{cooking_method} {food} with {plant}, "
+    f"{describe_food}, served on a bed of {household_item}."
+)
